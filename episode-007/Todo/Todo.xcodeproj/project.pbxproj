@@ -6,6 +6,21 @@
 	objectVersion = 44;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		273A602D0FB8BB0400F396C8 /* TodoWithMacRubyEmbedded */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 273A603E0FB8BB1500F396C8 /* Build configuration list for PBXAggregateTarget "TodoWithMacRubyEmbedded" */;
+			buildPhases = (
+				273A602C0FB8BB0400F396C8 /* ShellScript */,
+			);
+			dependencies = (
+				273A60310FB8BB0800F396C8 /* PBXTargetDependency */,
+			);
+			name = TodoWithMacRubyEmbedded;
+			productName = TodoWithMacRubyEmbedded;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		273CE6450FAF27B8005DD1B2 /* TodoController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 273CE6440FAF27B8005DD1B2 /* TodoController.rb */; };
 		4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4DE339F60D74FCDD00ADB6EE /* rb_main.rb */; };
@@ -15,6 +30,16 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		273A60300FB8BB0800F396C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090 /* Todo */;
+			remoteInfo = Todo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -153,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* Todo */,
+				273A602D0FB8BB0400F396C8 /* TodoWithMacRubyEmbedded */,
 			);
 		};
 /* End PBXProject section */
@@ -171,6 +197,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		273A602C0FB8BB0400F396C8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=\"$PATH:/usr/local/bin\" /usr/bin/env macruby -r hotcocoa/application_builder -e \"HotCocoa::ApplicationBuilder.deploy(ARGV[0])\" $TARGET_BUILD_DIR/$PROJECT_NAME.app";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -181,6 +223,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		273A60310FB8BB0800F396C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* Todo */;
+			targetProxy = 273A60300FB8BB0800F396C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
@@ -202,6 +252,27 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		273A602E0FB8BB0400F396C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = TodoWithMacRubyEmbedded;
+			};
+			name = Debug;
+		};
+		273A602F0FB8BB0400F396C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = TodoWithMacRubyEmbedded;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -259,6 +330,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		273A603E0FB8BB1500F396C8 /* Build configuration list for PBXAggregateTarget "TodoWithMacRubyEmbedded" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				273A602E0FB8BB0400F396C8 /* Debug */,
+				273A602F0FB8BB0400F396C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Todo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
