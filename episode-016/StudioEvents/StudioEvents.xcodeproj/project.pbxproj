@@ -1,0 +1,233 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27CE93B31331A226002D2D05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CE93B21331A226002D2D05 /* Foundation.framework */; };
+		27CE93B61331A226002D2D05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CE93B51331A226002D2D05 /* main.m */; };
+		27CE93C11331A24D002D2D05 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CE93C01331A24D002D2D05 /* Event.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27CE93AC1331A226002D2D05 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		27CE93AE1331A226002D2D05 /* StudioEvents */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StudioEvents; sourceTree = BUILT_PRODUCTS_DIR; };
+		27CE93B21331A226002D2D05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		27CE93B51331A226002D2D05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27CE93B81331A226002D2D05 /* StudioEvents-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StudioEvents-Prefix.pch"; sourceTree = "<group>"; };
+		27CE93B91331A226002D2D05 /* StudioEvents.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = StudioEvents.1; sourceTree = "<group>"; };
+		27CE93BF1331A24D002D2D05 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		27CE93C01331A24D002D2D05 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27CE93AB1331A226002D2D05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27CE93B31331A226002D2D05 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27CE93A31331A226002D2D05 = {
+			isa = PBXGroup;
+			children = (
+				27CE93B41331A226002D2D05 /* StudioEvents */,
+				27CE93B11331A226002D2D05 /* Frameworks */,
+				27CE93AF1331A226002D2D05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27CE93AF1331A226002D2D05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27CE93AE1331A226002D2D05 /* StudioEvents */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27CE93B11331A226002D2D05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27CE93B21331A226002D2D05 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27CE93B41331A226002D2D05 /* StudioEvents */ = {
+			isa = PBXGroup;
+			children = (
+				27CE93B51331A226002D2D05 /* main.m */,
+				27CE93B91331A226002D2D05 /* StudioEvents.1 */,
+				27CE93B71331A226002D2D05 /* Supporting Files */,
+				27CE93BF1331A24D002D2D05 /* Event.h */,
+				27CE93C01331A24D002D2D05 /* Event.m */,
+			);
+			path = StudioEvents;
+			sourceTree = "<group>";
+		};
+		27CE93B71331A226002D2D05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27CE93B81331A226002D2D05 /* StudioEvents-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27CE93AD1331A226002D2D05 /* StudioEvents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27CE93BC1331A226002D2D05 /* Build configuration list for PBXNativeTarget "StudioEvents" */;
+			buildPhases = (
+				27CE93AA1331A226002D2D05 /* Sources */,
+				27CE93AB1331A226002D2D05 /* Frameworks */,
+				27CE93AC1331A226002D2D05 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudioEvents;
+			productName = StudioEvents;
+			productReference = 27CE93AE1331A226002D2D05 /* StudioEvents */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27CE93A51331A226002D2D05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Clarkware Consulting, Inc.";
+			};
+			buildConfigurationList = 27CE93A81331A226002D2D05 /* Build configuration list for PBXProject "StudioEvents" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 27CE93A31331A226002D2D05;
+			productRefGroup = 27CE93AF1331A226002D2D05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27CE93AD1331A226002D2D05 /* StudioEvents */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27CE93AA1331A226002D2D05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27CE93B61331A226002D2D05 /* main.m in Sources */,
+				27CE93C11331A24D002D2D05 /* Event.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		27CE93BA1331A226002D2D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		27CE93BB1331A226002D2D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		27CE93BD1331A226002D2D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StudioEvents/StudioEvents-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		27CE93BE1331A226002D2D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StudioEvents/StudioEvents-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27CE93A81331A226002D2D05 /* Build configuration list for PBXProject "StudioEvents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27CE93BA1331A226002D2D05 /* Debug */,
+				27CE93BB1331A226002D2D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27CE93BC1331A226002D2D05 /* Build configuration list for PBXNativeTarget "StudioEvents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27CE93BD1331A226002D2D05 /* Debug */,
+				27CE93BE1331A226002D2D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27CE93A51331A226002D2D05 /* Project object */;
+}
