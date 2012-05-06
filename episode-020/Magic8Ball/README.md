@@ -1,11 +1,17 @@
 # Magic Eight Ball: A RubyMotion Example App
 
+## Screencast
+
+To watch this app being built incrementally, check out the
+[free 50-minute screencast](http://pragmaticstudio.com/screencasts/rubymotion).
+
 ## Quick Start
 
 1. Install [Xcode](http://itunes.apple.com/us/app/xcode/id497799835?mt=12)
 2. Install [RubyMotion](http://www.rubymotion.com/)
 3. Run `rake` to build the project and run the app in the Simulator
-4. Run `rake device` to build the project and run the app on a provisioned iOS device
+4. Run `rake spec` to run all the specs
+5. Run `rake device` to build the project and run the app on a provisioned iOS device
 
 ## Credits
 

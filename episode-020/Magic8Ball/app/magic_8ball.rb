@@ -1,4 +1,5 @@
 class Magic8Ball
+  attr_reader :answers
   
   def initialize
     @answers = loadAnswers
